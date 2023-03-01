@@ -1,0 +1,14 @@
+name: backend
+on:
+  push: 
+    branches:
+      - "main"
+    paths:
+      - "backend/**"
+  workflow_dispatch:
+  workflow_run:
+      
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+

@@ -1,0 +1,14 @@
+name: frontend
+on:
+  push: 
+    branches:
+      - "main"
+    paths:
+      - "frontend/**"
+  workflow_dispatch:
+    
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+
