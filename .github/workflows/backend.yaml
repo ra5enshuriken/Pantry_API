@@ -7,8 +7,14 @@ on:
       - "backend/**"
   workflow_dispatch:
   workflow_run:
+    workflows:
+      - "frontend"
+    types:
+      - completed
       
 jobs:
   setup:
     runs-on: ubuntu-latest
-
+    steps:
+      - name: this is backend test
+        run: echo "helllo backend"

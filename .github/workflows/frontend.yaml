@@ -11,4 +11,7 @@ on:
 jobs:
   setup:
     runs-on: ubuntu-latest
-
+    
+    steps:
+      - name: this is frontend test
+        run: echo "helllo frontend"
