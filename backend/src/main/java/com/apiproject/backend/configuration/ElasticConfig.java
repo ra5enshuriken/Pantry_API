@@ -9,10 +9,11 @@ import org.springframework.data.elasticsearch.repository.config.EnableElasticsea
 @Configuration
 @EnableElasticsearchRepositories
 public class ElasticConfig extends ElasticsearchConfiguration {
+    
     @Value("${ELASTICSEARCH_HOST:localhost}")
-        private String host;
-        @Value("${ELASTICSEARCH_port:9200}")
-        private String port;
+    private String host;
+    @Value("${ELASTICSEARCH_port:9200}")
+    private String port;
     @Override
     public ClientConfiguration clientConfiguration() {
         // TODO Auto-generated method stub
