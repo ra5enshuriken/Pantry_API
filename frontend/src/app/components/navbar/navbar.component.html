@@ -1,6 +1,7 @@
 <nav class="navbar-container">
-    <div [ngClass]="menuToggle ? 'menu':'menu-toggle'" (click)="toggle($event)"></div>
-    <div class="links" [ngClass]="!menuToggle ? 'nav-flex-c':''">
+    <div *ngIf="mobile" [ngClass]="menuToggle ? 'menu':'menu-toggle'" (click)="toggle($event)"></div>
+    
+    <div class="links" [ngStyle]="{'display':(mobile)?(!menuToggle ? 'flex':'none'):'flex'}">
         <a href="">link</a>
         <a href="">link</a>
         <a href="">link</a>

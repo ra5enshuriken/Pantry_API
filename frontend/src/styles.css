@@ -26,3 +26,9 @@ button:hover{
     transition: 200ms;
     transform: scale(1.08);
 }
+.box-shadow-t1{
+    box-shadow: 0 0 1em var(--box-shadow);;
+}
+.box-shadow-t2{    
+    box-shadow: 0.2em 0.2em 0.6em var(--box-shadow);
+}
