@@ -9,6 +9,7 @@
     --warning:#f1982c;
     --danger:#f44336;
     --info:#d6810e;
+    --box-shadow:rgba(0,0,0,0.45);
 }
 
 *{

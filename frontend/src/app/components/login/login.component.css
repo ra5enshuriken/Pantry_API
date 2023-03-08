@@ -5,7 +5,7 @@ p{
 background-color: var(--primary-color);
     
     padding:2em;
-    width:100vw;
+    width:100%;
     height:100vh;
     display: flex;
     align-items: center;
@@ -14,14 +14,15 @@ background-color: var(--primary-color);
 form{
     background-color: var(--light-color);
     color:var(--primary-color);
-    padding:1em 1em;
+    padding:3em;
+    padding-top: 2em;
     display: flex;
     flex-direction: column;
     gap:1em 0;
     border-radius: 0.5em;
     align-items: center;
-    box-shadow: 0 0 1em #0000008c;
-    min-width: 20rem;
+    box-shadow: 0 0 1em var(--box-shadow);
+    
 }
 form > input{
     border-bottom:0.1em solid  black;
@@ -35,7 +36,7 @@ form > button{
     padding:1em;
     border-radius: 0.3em;
     font-weight: 600;
-    box-shadow: 0.2em 0.2em 0.6em rgba(0,0,0,0.4);
+    box-shadow: 0.2em 0.2em 0.6em var(--box-shadow);
 }
 a{
     color:var(--danger);

@@ -1,0 +1,112 @@
+nav{
+    background-color: var(--tab-color);
+    padding:0.7em;
+    width:100%;
+    position:sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    border: 0.1em solid var(--light-color);
+    border-radius: 0.5em;
+    width:2em;
+    height: max-content;
+    display: block;
+    position: relative; 
+}
+.menu:hover{
+    cursor: pointer;
+}    
+.menu::after{
+    content: "";
+    position: absolute;
+    border-radius: 0.5em;
+    border:0.1em solid var(--light-color);
+    width:100%;
+    right:-0.1em;
+    top:0.4em;       
+}
+.menu::before{
+    content: "";
+    position: absolute;
+    border-radius: 0.5em;
+    border:0.1em solid var(--light-color);
+    width:100%;
+    right:-0.1em;
+    bottom:0.4em;       
+}
+.menu-toggle{
+    width:2em;
+    position: relative;    
+}
+.menu:hover,
+.menu-toggle:hover{
+    cursor: pointer;
+}    
+.menu-toggle::after{
+    content: "";
+    display: inline-block;
+    position:absolute;
+    border-radius: 0.5em;
+    border:0.1em solid var(--light-color);
+    width:60%;
+    rotate:45deg;
+    transition: 500ms;
+}
+.menu-toggle::before{
+    content: "";
+    border-radius: 0.5em;    
+    display: inline-block;
+    position:absolute;
+    border:0.1em solid var(--light-color);
+    width:60%;
+    rotate:-45deg;
+    transition: 500ms;
+}
+.links{
+    display: flex;
+    gap:1em;
+}
+.nav-flex-c{
+    flex-direction: column;
+    position: absolute;
+    left:0;
+    top:96%;
+    z-index: 1;
+    background-color: var(--tab-color);
+    padding:2em;
+    border-radius: 0.3em;
+}
+.links > a{
+    padding:0.5em 1em;
+    color:var(--light-color);
+    text-decoration: none;
+    position:relative;
+    border-radius: 0.5em;
+}
+.links>a::after{
+    content: "";
+    border: 0.1em solid var(--light-color);
+    border-radius: 0.3em;
+    position:absolute;
+    width: 70%;
+    left:12%;
+    top:80%;
+    transition: 500ms ;
+    transform: scale(0);
+}
+.links> a:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.links >a:hover::after{
+    transform: scale(1);
+    
+}
+.info-search{
+    border: 0.2em solid var(--light-color);
+    padding:0.2em;
+    width:max-content;
+    display: block;
+}

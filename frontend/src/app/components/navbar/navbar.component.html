@@ -1,1 +1,12 @@
-<p>navbar works!</p>
+<nav class="navbar-container">
+    <div [ngClass]="menuToggle ? 'menu':'menu-toggle'" (click)="toggle($event)"></div>
+    <div class="links" [ngClass]="!menuToggle ? 'nav-flex-c':''">
+        <a href="">link</a>
+        <a href="">link</a>
+        <a href="">link</a>
+        <a href="">link</a>
+    </div>
+    <div class="info-search">
+        
+    </div>
+</nav>
